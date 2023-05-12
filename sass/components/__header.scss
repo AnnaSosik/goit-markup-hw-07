@@ -1,0 +1,105 @@
+.header {
+  color: getColor('foreground');
+  padding: 24px 0 25px;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.logo {
+  font-family: getFont('rel');
+  font-weight: getWeight('bold');
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #000;
+  margin-right: 93px;
+
+  &--color {
+    color: var(--brand-color-blue);
+  }
+}
+
+
+.nav {
+  &__list {
+    gap: 46px;
+    justify-content: space-between;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: getWeight("medium");
+    line-height: 1.14;
+    position: relative;
+    transition: color 250ms, getAnimation("animation");
+  }
+
+  &__link--active::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    fill: solid getColor("accent");
+    border-radius: 2px;
+    top: 45px;
+    background-color: getColor("accent");
+    color: getColor("accent");
+  }
+
+  &__link--active{
+color: getColor('accent');
+  }
+
+  &__link:is(:hover, :focus, ) {
+    color: getColor("accent");
+  }
+}
+
+
+.contact-list {
+  margin-left: auto;
+  gap: 50px;
+  align-items: center;
+
+  &__link {
+    font-family: getFont("rob");
+    color: getColor("secondary");
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    align-items: center;
+
+    transition: color 250ms getAnimation("animation");
+  }
+
+  &__link:is(:hover, :focus, ) {
+    color: getColor("accent");
+  }
+
+  &__link:is(:hover, :focus, ) > svg {
+    fill: var(--brand-color-blue);
+  }
+}
+
+
+.nav-icon {
+  background-color: getColor("foreground");
+  fill: getColor("secondary");
+  margin-right: 10px;
+
+  transition: fill 250ms getAnimation("animation"),
+    background-color 250ms getAnimation("animation");
+
+  &:is(:hover, :focus, ) {
+    color: getColor('accent')
+    fill: currentColor;
+  }
+}
+

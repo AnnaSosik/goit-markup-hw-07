@@ -14,14 +14,11 @@ figure {
   padding: 0;
 }
 
-.list {
-    list-style: none;
-  }
-  
-  [tabindex="0"]:focus {
-    outline: none;
-  }
-  
+
+[tabindex="0"]:focus {
+  outline: none;
+}
+
 ul {
   list-style-type: none;
 }
@@ -49,6 +46,11 @@ nav {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+
+  &--head {
+    display: flex;
+    align-items: center;
+  }
 }
 
 header {
@@ -64,9 +66,9 @@ main {
   text-align: start;
   padding-top: 60px;
   padding-bottom: 60px;
-}
 
-&__box {
-  display: flex;
-  align-items: baseline;
+  &__box {
+    display: flex;
+    align-items: baseline;
+  }
 }
