@@ -1,5 +1,5 @@
 .header {
-  color: getColor('foreground');
+  color: getColor("foreground");
   padding: 24px 0 25px;
   border-bottom: 1px solid #ececec;
   display: flex;
@@ -8,8 +8,8 @@
 }
 
 .logo {
-  font-family: getFont('rel');
-  font-weight: getWeight('bold');
+  font-family: getFont("rel");
+  font-weight: getWeight("bold");
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -21,7 +21,6 @@
     color: var(--brand-color-blue);
   }
 }
-
 
 .nav {
   &__list {
@@ -51,15 +50,14 @@
     color: getColor("accent");
   }
 
-  &__link--active{
-color: getColor('accent');
+  &__link--active {
+    color: getColor("accent");
   }
 
   &__link:is(:hover, :focus, ) {
     color: getColor("accent");
   }
 }
-
 
 .contact-list {
   margin-left: auto;
@@ -88,7 +86,6 @@ color: getColor('accent');
   }
 }
 
-
 .nav-icon {
   background-color: getColor("foreground");
   fill: getColor("secondary");
@@ -98,8 +95,7 @@ color: getColor('accent');
     background-color 250ms getAnimation("animation");
 
   &:is(:hover, :focus, ) {
-    color: getColor('accent')
+    color: getColor("accent");
     fill: currentColor;
   }
 }
-
