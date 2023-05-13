@@ -82,7 +82,7 @@ select {
 [type="reset"],
 [type="submit"],
 button {
-  -webkit-appearance: button;
+  -webkit-appearance:button;
 }
 ::-moz-focus-inner {
   border-style: none;

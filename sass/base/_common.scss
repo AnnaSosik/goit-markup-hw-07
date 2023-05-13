@@ -1,6 +1,6 @@
 body {
-  font-family: getFont("rob");
-  color: getColor("primary");
+  font-family: getFont('rob');
+  color: getColor('primary');
 }
 
 p,
@@ -11,15 +11,24 @@ h3,
 ul,
 figure {
   margin: 0;
+}
+
+ul {
+  margin: 0;
   padding: 0;
+  list-style-type: none;
+}
+
+main {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
 }
 
 [tabindex="0"]:focus {
   outline: none;
-}
-
-ul {
-  list-style-type: none;
 }
 
 img {
@@ -38,6 +47,14 @@ nav {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  &--light{
+    background-color: getBackgroundColor('light');
+  }
+
+  &--job{
+    padding-top: 0;
+  }
 }
 
 .container {
@@ -47,7 +64,17 @@ nav {
   padding: 0 15px;
 }
 
-.head {
+.header {
+  color: var(--brand-background-white);
+  padding: 24px 0 25px;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+
+.header {
   display: flex;
   align-items: center;
 }
@@ -57,7 +84,7 @@ main {
 }
 
 .footer {
-  background-color: getColot("dark");
+  background-color: getBackgroundColor("dark");
   text-align: start;
   padding-top: 60px;
   padding-bottom: 60px;

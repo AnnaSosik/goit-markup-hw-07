@@ -1,0 +1,21 @@
+.hero {
+    background-color: getBackgroundColor('dark');
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+
+    &__title {
+        @include font(900, 44px, 1.36, 0.06em);
+        color: getColor('foreground');
+        text-transform: uppercase;
+        margin: 0px auto;
+        margin-bottom: 30px;
+
+    }
+}
