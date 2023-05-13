@@ -3,14 +3,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 
 /*--base-- */
-@import"/sass/base/common";
+@import"./sass/base/common";
 
 /*--utils-- */
-@import "../utils/vars";
+@import "./utils/vars";
 
 /*--components-- */
-@import "../sass/components/adventage";
-@import "../sass/components/header";
+@import "./sass/components/adventage";
+@import "./sass/components/header";
 @import "./sass/components/footer";
 
 
