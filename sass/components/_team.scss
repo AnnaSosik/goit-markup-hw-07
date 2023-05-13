@@ -14,10 +14,7 @@
     }
 
     &__title {
-        @include font(700, 36px, 1.16, 0.03em);
-        color: getColor('primary');
-        text-align: center;
-        margin-bottom: 50px;
+        @include title;
     }
 
     &__text {
