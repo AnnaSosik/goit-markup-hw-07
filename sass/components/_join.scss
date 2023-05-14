@@ -27,7 +27,7 @@
         transition: background-color 250ms getAnimation('animation');
 
 
-        &:is(:hover, :focus, ) {
+        &:is(:hover, :focus) {
             background-color: getColor('accent');
         }
 

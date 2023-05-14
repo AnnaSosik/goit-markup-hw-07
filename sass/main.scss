@@ -1,8 +1,12 @@
+/*--utils-- */
+@import "./utils/vars";
+@import "./utils/mixins";
+
 /*--base-- */
 @import "./base/common";
 
 /*--components-- */
-@import "./components/adventage";
+@import "./components/advantage";
 @import "./components/header";
 @import "./components/footer";
 @import "./components/client";
@@ -16,7 +20,3 @@
 @import "./components/newsletter";
 @import "./components/social";
 @import "./components/team";
-
-/*--utils-- */
-@import "./utils/vars";
-@import "./utils/mixins";

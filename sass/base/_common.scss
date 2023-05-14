@@ -1,5 +1,5 @@
 body {
-  font-family: getFont('rob');
+  font-family: $mainFont;
   color: getColor('primary');
 }
 
@@ -11,6 +11,14 @@ h3,
 ul,
 figure {
   margin: 0;
+}
+
+[tabindex="0"]:focus {
+  outline: none;
+}
+
+svg {
+  vertical-align: middle;
 }
 
 ul {
@@ -35,10 +43,6 @@ img {
   display: block;
 }
 
-svg {
-  vertical-align: middle;
-}
-
 nav {
   display: flex;
   align-items: center;
@@ -48,11 +52,11 @@ nav {
   padding-top: 94px;
   padding-bottom: 94px;
 
-  &--light{
+  &--light {
     background-color: getBackgroundColor('light');
   }
 
-  &--job{
+  &--job {
     padding-top: 0;
   }
 }

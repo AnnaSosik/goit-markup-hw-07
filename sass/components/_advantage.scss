@@ -1,0 +1,35 @@
+.content {
+  text-align: start;
+  gap: 30px;
+  flex-wrap: wrap;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.advantage {
+  font-family: $mainFont;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 270px;
+  border-radius: 4px;
+  background: getBackgroundColor('light');
+  margin-bottom: 30px;
+
+  &__title {
+    @include font(700, 14px, 1.1);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    @include font(400, 14px, 1.7);
+    color: getColor('secondary');
+    width: 270px;
+    margin-right: 30px;
+  }
+}

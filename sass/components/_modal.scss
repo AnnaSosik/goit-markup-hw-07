@@ -30,7 +30,7 @@
     width: 528px;
     height: 581px;
     background: getColor('foreground');
-    box-shadow: getBoxShadow('modal');
+    box-shadow: $shadow-modal;
     border-radius: 4px;
 
     transform: translate(-50%, -50%) scale(1) rotate(0);

@@ -40,7 +40,7 @@
         height: 50px;
         margin-left: 12px;
         background-color: getColor('accent');
-        box-shadow: getBoxShadow('button');
+        box-shadow: $shadow-button;
         border-radius: 4px;
         display: flex;
         align-items: center;

@@ -16,18 +16,18 @@
         display: flex;
 
         transition: background-color 250ms getAnimation('animation');
+        
 
         &:is(:hover, :focus) {
-            color: getColor('accent');
+            background-color: getColor('accent');
         }
 
         &:is(:hover, :focus)>svg {
             fill: getColor('foreground');
         }
-
+    }
 
         &__svg {
-            fill: getColor('grey');
+            fill:getBackgroundColor('grey');
         }
     }
-}

@@ -16,14 +16,15 @@
         text-transform: uppercase;
         margin: 0px auto;
         margin-bottom: 30px;
+        width: 696px;
 
     }
 
     &__btn {
         display: block;
-        color: getcolor('foreground');
+        color:getColor('foreground');
         background-color: getColor('accent');
-        box-shadow: getBoxShadow('button');
+        box-shadow: $shadow-button;
         font-weight: 700;
         line-height: 1.9;
         width: 200px;

@@ -3,7 +3,7 @@
 
     &__card {
         background-color: getColor('foreground');
-        box-shadow: getBoxShadow('card');
+        box-shadow: $shadow-card;
         border-radius: 0px 0px 4px 4px;
     }
 
@@ -15,11 +15,14 @@
 
     &__title {
         @include title;
+        
     }
 
     &__text {
-        @include font(700, 16px, 1.2, 0.03em);
-        color: getColor('secondary');
+        color:getColor('secondary');
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        font-size: 16px;
         line-height: 19px;
     }
 
@@ -27,6 +30,15 @@
         display: flex;
         justify-content: space-between;
         text-align: center;
+    }
+
+    &__name{
+        color:getColor('primary');
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        padding-top: 30px;
+        padding-bottom: 10px;
     }
 }
 

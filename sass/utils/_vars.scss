@@ -1,9 +1,7 @@
 /*--font-family--*/
 
-$font: (
-  'rob': "'Roboto', sans-serif",
-  'ral': "'Raleway', sans-serif",
-);
+$mainFont: Roboto, sans-serif;
+$secondaryFont: Raleway, sans-serif;
 
 $color: (
   'primary': #212121,
@@ -19,23 +17,18 @@ $background-color: (
   'white': #eeeeee,
 );
 
-/*--box-shadow--*/
+/*--box-shadows--*/
 
-$box-shadow: (
-  'button': 0px 4px 4px rgba(0, 0, 0, 0.15),
-  'card': 0px 1px 3px rgba(0, 0, 0, 0.12),
-  0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2),
-  'portfolio': 0px 1px 1px rgba(0, 0, 0, 0.12),
-  0px 4px 4px rgba(0, 0, 0, 0.06),
-  1px 4px 6px rgba(0, 0, 0, 0.16),
-  'filter': 0px 3px 1px rgba(0, 0, 0, 0.1),
-  0px 1px 2px rgba(0, 0, 0, 0.08),
-  0px 2px 2px rgba(0, 0, 0, 0.12),
-  'modal': 0px 1px 3px rgba(0, 0, 0, 0.12),
-  0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2),
-);
+  $shadow-button: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  $shadow-card: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(26, 10, 10, 0.2);
+
+  $shadow-portfolio: 0px 1px 1px rgba(0, 0, 0, 0.12), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  $shadow-filter: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+  $shadow-modal: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
 /*--transition--*/
 
 $animation: (
@@ -46,10 +39,6 @@ $animation: (
 
 @function getGrid($grd) {
   @return map-get($grid, $grd);
-}
-
-@function getFont($fnt) {
-  @return map-get($font, $fnt);
 }
 
 @function getColor($col) {

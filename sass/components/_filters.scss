@@ -16,14 +16,14 @@
         border-radius: 4px;
         padding: 6px 22px;
 
-        transition: color 250ms getAnimation('animation');
-        background-color: 250ms getAnimation('animation'),
+        transition: color 250ms getAnimation('animation'),
+            background-color 250ms getAnimation('animation'),
             box-shadow 250ms getAnimation('animation');
 
-            &:is(:hover,:focus){
-                color:getColor('foreground');
-                background-color: getColor('accent');
-                box-shadow: getBoxShadow('filter');
-            }
+        &:is(:hover, :focus) {
+            color: getColor('foreground');
+            background-color: getColor('accent');
+            box-shadow: $shadow-filter;
+        }
     }
 }
