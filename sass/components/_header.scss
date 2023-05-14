@@ -8,6 +8,15 @@
   border-bottom: 1px solid #ececec;
 }
 
+.head {
+  display: flex;
+  align-items: center;
+}
+
+.header .container {
+  align-items: center;
+}
+
 .nav-list {
   gap: 46px;
   justify-content: space-between;
@@ -17,7 +26,6 @@
     @include font(500, 14px, 1.14, );
     font-family: getFont('rob');
     color: getColor('primary');
-    text-decoration: none;
     position: relative;
     transition: color 250ms, getAnimation('animation');
 
@@ -54,7 +62,6 @@
     font-family: getFont('rob');
     color: getColor('secondary');
     @include font(500, 14px, 1.14, 0.02em);
-    text-decoration: none;
     align-items: center;
 
     transition: color 250ms, getAnimation("animation");
@@ -67,16 +74,16 @@
       fill: getColor('accent');
     }
   }
-}
 
-.nav-icon {
-  background-color: getColor('foreground');
-  fill: getColor('secondary');
-  margin-right: 10;
-  transition: color 250ms getAnimation('animation'), background-color 250ms getAnimation('animation');
+  &__icon {
+    background-color: getColor('foreground');
+    fill: getColor('secondary');
+    margin-right: 10;
+    transition: color 250ms getAnimation('animation'), background-color 250ms getAnimation('animation');
 
-  &:is(:hover, :focus, ) {
-    color: getColor('accent');
-    fill: currentColor;
+    &:is(:hover, :focus, ) {
+      color: getColor('accent');
+      fill: currentColor;
+    }
   }
 }

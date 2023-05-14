@@ -1,6 +1,8 @@
 /* ex. @include font(700, 26px, 1.2, 00.03em);*/
 
 @mixin font($weight: false, $size: false, $line: false, $letter: false) {
+    font-family: getFont('rob');
+
     @if $weight {
         font-weight: $weight;
     }
@@ -19,15 +21,14 @@
 
 }
 
-@mixin flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 @mixin title {
     @include font(700, 36px, 1.16, 0.03em);
     margin-bottom: 50px;
     text-align: center;
-    color:getColor('primary');
+    color: getColor('primary');
+}
+
+@mixin logo {
+    @include font(700, 26px, 1.2, 00.03em);
+    font-family: getFont('ral');
 }

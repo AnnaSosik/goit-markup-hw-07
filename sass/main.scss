@@ -4,11 +4,22 @@
 /*--base-- */
 @import "//sass/base/common";
 
-/*--utils-- */
-@import "//sass/utils/vars";
-
 /*--components-- */
 @import "//sass/components/adventage";
 @import "//sass/components/header";
 @import "//sass/components/footer";
+@import "//sass/components/client";
+@import "//sass/components/filters";
+@import "//sass/components/portfolio";
+@import "//sass/components/hero";
+@import "//sass/components/job";
+@import "//sass/components/join";
+@import "//sass/components/logo";
+@import "//sass/components/modal";
+@import "//sass/components/newsletter";
+@import "//sass/components/social";
+@import "//sass/components/team";
+
+/*--utils-- */
+@import "//sass/utils/vars";
 

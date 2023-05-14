@@ -17,10 +17,10 @@
   <body>
 
      <!--HEADER-->
-    <header>
+    <header class="header">
       <div class="container head">
         <a class="logo" href="index.html" title="Strona główna"
-          ><span class="logo--color">Web</span>Studio</a
+          ><span class="logo--blue">Web</span>Studio</a
         >
         <nav>
           <ul class="nav-list">
@@ -38,7 +38,7 @@
         <ul class="contact">
           <li>
             <a class="contact__link" href="mailto:info@devstudio.com"
-              ><svg class="nav-icon" width="16" height="12">
+              ><svg class="contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -46,7 +46,7 @@
           </li>
           <li>
             <a class="contact__link" href="tel:48111111111">
-              <svg class="nav-icon" width="10" height="16">
+              <svg class="contact__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111
@@ -62,7 +62,7 @@
       <section class="section hero">
         <div class="container">
           <h1 class="hero__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button type="button" class="top-button" data-modal-open>Zamów usługę</button>
+          <button type="button" class="hero__btn" data-modal-open>Zamów usługę</button>
         </div>
       </section>
       <!--SECTION HERO -->
@@ -184,7 +184,7 @@
                 <ul class="social__media">
                   <li>
                     <a href="#" class="social__icon">
-                      <svg class="icon" width="20" height="20">
+                      <svg class="social__svg" width="20" height="20">
                         
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
@@ -192,21 +192,21 @@
                   </li>
                   <li>
                     <a href="#" class="social__icon">
-                      <svg class="icon" width="20" height="20">
+                      <svg class="social__svg" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="social__icon">
-                      <svg class="icon" width="20" height="20">
+                      <svg class="social__svg" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="social__icon">
-                      <svg class="icon" width="20" height="20">
+                      <svg class="social__svg" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -232,28 +232,28 @@
                 <ul class="social__media">
                   <li>
                     <a href="#" class="social__icon">
-                      <svg class="icon" width="20" height="20">
+                      <svg class="social__svg" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="social__icon">
-                      <svg class="icon" width="20" height="20">
+                      <svg class="social__svg" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="social__icon">
-                      <svg class="icon" width="20" height="20">
+                      <svg class="social__svg" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
                     <a href="#" class="social__icon">
-                      <svg class="icon" width="20" height="20">
+                      <svg class="social__svg" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -403,54 +403,54 @@
       <!--FOOTER -->
     <footer class="footer">
       <div class="container">
-        <div class="footer__box">
+        <div class="address">
           <div>
         <a class="logo-footer" href="index.html" title="Strona główna"
-          ><span class="logo-color">Web</span>Studio</a>
+          ><span class="logo-footer--blue">Web</span>Studio</a>
         <address>
-          <ul class="list">
-            <li class="list_footer-item">
-              <a class="footer-address">m. Warszawa, Aleje Jerozolimskie 21</a>
+          <ul>
+            <li class="address__list">
+              <a class="address___item">m. Warszawa, Aleje Jerozolimskie 21</a>
             </li>
-            <li class="footer-item">
-              <a class="address-link" href="mailto:info@example.com">
+            <li class="address__list">
+              <a class="address__link" href="mailto:info@example.com">
                 info@example.com</a
               >
             </li>
             <li>
-              <a class="address-link tel" href="tel:48111111111">+48 111 111 111</a>
+              <a class="address__link" href="tel:48111111111">+48 111 111 111</a>
             </li>
           </ul>
         </address>
       </div>
 
-          <div class="join-us-box">
-          <p class="join-us">Dołącz do nas</p>
-          <ul class="footer-icon-list">
+          <div class="join">
+          <p class="join__title">Dołącz do nas</p>
+          <ul class="join__list">
             <li>
-              <a href="#" class="footer-icon-link">
-                <svg class="icon-footer" width="20" height="20">
+              <a href="#" class="join__icon">
+                <svg class="join__svg" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="footer-icon-link">
-                <svg class="icon-footer" width="20" height="20">
+              <a href="#" class="join__icon">
+                <svg class="join__svg" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="footer-icon-link">
-                <svg class="icon-footer" width="20" height="20">
+              <a href="#" class="join__icon">
+                <svg class="join__svg" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" class="footer-icon-link">
-                <svg class="icon-footer" width="20" height="20">
+              <a href="#" class="join__icon">
+                <svg class="join__svg" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -458,67 +458,70 @@
           </ul>
           </div>
 
-          <div class="footer-form">
-          <p class="join-us">zapisz się do newslettera</p>
-        <form class="mail">
+          <div class="newsletter">
+          <p class="newsletter__title">zapisz się do newslettera</p>
+        <form class="newsletter__form">
           <label>
-            <input type="email" name="email" class="mail-input" placeholder="E-mail" />
+            <input type="email" name="email" class="newsletter__input" placeholder="E-mail" />
           </label>
-          <button class="mail-btn" type="submit">  
-          <span class="mail-btn-name">Zapisz się</span>  
-          <svg class="btn-newsletter-icon"><use href="./images/icons.svg#icon-send"></use></svg>
+          <button class="newsletter__btn" type="submit">  
+          <span class="sign-in">Zapisz się</span>  
+          <svg class="newsletter__icon"><use href="./images/icons.svg#icon-send"></use></svg>
         </button>
         </form>
           </div>
         </div>
-
     </footer>
      <!--FOOTER -->
 
       <!--MODAL FORMULAR -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="btn-close" data-modal-close>
-          <svg class="btn-close-icon" width="11" height="11">
+        <button type="button" class="modal__btn" data-modal-close>
+          <svg class="modal__close" width="11" height="11">
             <use href="./images/icons.svg#btn-close-icon"></use>
           </svg>
         </button>
         
-    <p class="modal-header">Zostaw swoje dane w formularzu poniżej</p>
+    <p class="modal__header">Zostaw swoje dane w formularzu poniżej</p>
 
-    <form class="modal-form">
-      <label class="label" for="name">Imię</label>
-      <div class="form-container">
-        <input type="text" name="name" id="name" class="modal-input" />
-        <svg class="modal-form-icon" width="12" height="12">
+    <form class="modal__form">
+
+      <label class="modal__label" for="name">Imię</label>
+      <div class="modal__container">
+        <input type="text" name="name" id="name" class="modal__input" />
+        <svg class="modal__icon" width="12" height="12">
           <use href="./images/icons.svg#icon-name"></use>
         </svg>
       </div>
-      <label class="label" for="tel">Telefon</label>
-      <div class="form-container">
-        <input type="tel" name="tel" id="tel" class="modal-input" />
-      <svg class="modal-form-icon" width="13" height="13">
+
+      <label class="modal__label" for="tel">Telefon</label>
+      <div class="modal__container">
+        <input type="tel" name="tel" id="tel" class="modal__input" />
+      <svg class="modal__icon" width="13" height="13">
       <use href="./images/icons.svg#icon-tel"></use>
     </svg>
       </div>
-      <label class="label" for="mail">Email</label>
-      <div class="form-container">
-        <input type="text" name="mail" id="mail" class="modal-input" />
-      <svg class="modal-form-icon" width="15" height="12">
+
+      <label class="modal__label" for="mail">Email</label>
+      <div class="modal__container">
+        <input type="text" name="mail" id="mail" class="modal__input" />
+      <svg class="modal__icon" width="15" height="12">
       <use href="./images/icons.svg#icon-mail"></use>
     </svg>
       </div>
-    <label class="label" for="comment">Komentarz</label>
-    <div class="form-container">
-    <textarea name="comment" width="448" height="120" class="modal-comment" placeholder="Wprowadź tekst"></textarea>
+
+    <label class="modal__label" for="comment">Komentarz</label>
+    <div class="modal__container">
+    <textarea name="comment" width="448" height="120" class="modal__comment" placeholder="Wprowadź tekst"></textarea>
   </div>
 
   <div class="checkbox">
-    <input type="checkbox" name="check" id="check" class="accept-form visually-hidden" required>
-    <label class="checkbox-icon" for="check">
+    <input type="checkbox" name="check" id="check" class="checkbox__accept" required>
+    <label class="checkbox__icon" for="check">
     </label>
-    <label class="checkbox-text">
-      <span class="declaration">Oświadczam iż akceptuję<a href class="link-decoration">Regulamin</a>i<a href class="link-decoration">Politykę Prywatności.</a></span>
+    <label class="checkbox__text">
+      <span class="checkbox__declaration">Oświadczam iż akceptuję<a href class="link-decoration">Regulamin</a>i<a href class="link-decoration">Politykę Prywatności.</a></span>
   </div>
          <button type="submit" class="modal-submit-btn">Wyślij</button>
         </form>

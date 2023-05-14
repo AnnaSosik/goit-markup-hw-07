@@ -1,6 +1,5 @@
 .logo {
-    @include font(700, 26px, 1.2, 00.03em);
-    font-family: getFont('ral');
+    @include logo;
     color: getColor('primary');
     margin-right: 93px;
 
@@ -9,3 +8,15 @@
     }
     
 }
+
+.logo-footer {
+    @include logo;
+    color: getColor('foreground');
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+  
+    &--blue {
+      color: getColor('accent');
+    }
+  }

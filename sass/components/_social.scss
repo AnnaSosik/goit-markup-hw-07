@@ -25,14 +25,9 @@
             fill: getColor('foreground');
         }
 
+
+        &__svg {
+            fill: getColor('grey');
+        }
     }
-}
-
-
-
-
-
-
-.icon {
-    fill: getColor('grey');
 }

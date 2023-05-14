@@ -18,4 +18,30 @@
         margin-bottom: 30px;
 
     }
+
+    &__btn {
+        display: block;
+        color: getcolor('foreground');
+        background-color: getColor('accent');
+        box-shadow: getBoxShadow('button');
+        font-weight: 700;
+        line-height: 1.9;
+        width: 200px;
+        height: 50px;
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 30px;
+
+        transition: color 250ms getAnimation('animation'),
+            background-color 250ms getAnimation('animation'),
+            box-shadow 250ms getAnimation('animation');
+
+        &:is(:hover, :focus) {
+            color: getColor('accent');
+            background-color: getColor('foreground');
+        }
+    }
 }
