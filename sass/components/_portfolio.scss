@@ -26,8 +26,6 @@
 
         transform: translateY(100%);
         transition: transform 250ms getAnimation('animation');
-
-        &--overlay {}
     }
 
     &__item {
