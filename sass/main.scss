@@ -1,24 +1,22 @@
-/*--fonts-- */
-@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap);
-
 /*--base-- */
-@import "//sass/base/common";
+@import "./base/common";
 
 /*--components-- */
-@import "//sass/components/adventage";
-@import "//sass/components/header";
-@import "//sass/components/footer";
-@import "//sass/components/client";
-@import "//sass/components/filters";
-@import "//sass/components/portfolio";
-@import "//sass/components/hero";
-@import "//sass/components/job";
-@import "//sass/components/join";
-@import "//sass/components/logo";
-@import "//sass/components/modal";
-@import "//sass/components/newsletter";
-@import "//sass/components/social";
-@import "//sass/components/team";
+@import "./components/adventage";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/client";
+@import "./components/filters";
+@import "./components/portfolio";
+@import "./components/hero";
+@import "./components/job";
+@import "./components/join";
+@import "./components/logo";
+@import "./components/modal";
+@import "./components/newsletter";
+@import "./components/social";
+@import "./components/team";
 
 /*--utils-- */
-@import "//sass/utils/vars";
+@import "./utils/vars";
+@import "./utils/mixins";
