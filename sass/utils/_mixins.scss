@@ -1,4 +1,4 @@
-/* ex. @include font(700, 26px, 1.2, 00.03em);*/
+
 
 @mixin font($weight: false, $size: false, $line: false, $letter: false) {
     font-family: getFont('rob');
