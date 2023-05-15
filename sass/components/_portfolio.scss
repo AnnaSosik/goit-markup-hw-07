@@ -4,28 +4,8 @@
         display: flex;
         align-items: center;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 30px;
-    }
-
-
-    &__text {
-        @include font(18px, 1.55, 0.03em);
-        margin: 0;
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background: rgba(33, 150, 243, 0.9);
-        color: getColor('foreground');
-        padding-top: 49px;
-        padding-left: 24px;
-        padding-right: 45px;
-        padding-bottom: 49px;
-        text-align: start;
-
-        transform: translateY(100%);
-        transition: transform 250ms getAnimation('animation');
     }
 
     &__item {
@@ -36,12 +16,11 @@
             box-shadow: $shadow-portfolio;
         }
 
-        &:is(:hover, :focus) .portfolio__text--overlay {
+        &:is(:hover, :focus) .portfolio__img--overlay {
             transform: translateY(0);
             opacity: 1;
         }
     }
-
 
 
     &__img {
@@ -50,7 +29,33 @@
         width: 370px;
         height: 294px;
 
+        &--overlay {
+            position: absolute;
+
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+
+            @include font(400, 18px, 1.55, 0.03em);
+            background: rgba(33, 150, 243, 0.9);
+            color: getColor('foreground');
+            padding: 0 25px;
+            opacity: 1;
+            line-height: 1.55;
+            text-align: start;
+
+
+            display: flex;
+            align-items: center;
+
+            transform: translateY(100%);
+
+            transition: transform 250ms getAnimation('animation');
+        }
+
         &>img {
+
             display: block;
             width: 100%;
             height: 100%;
@@ -70,22 +75,14 @@
     }
 
     &__title {
-        font-family: getFont('rob');
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
+        @include font(700, 18px, 1.55, 0.06em);
     }
 
 
     &__description {
         @include font(16px, 1.9, 0.03em);
-        font-family: getFont('rob');
         color: getColor('secondary');
-    }
+        padding-top: 4px;
 
-
-    .no-gap {
-        display: block;
     }
 }

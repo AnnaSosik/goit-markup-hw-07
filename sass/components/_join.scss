@@ -2,12 +2,7 @@
     margin-left: 70px;
 
     &__title {
-        @include font(700, 1.7, 0.03em);
-        width: 207px;
-        color: getColor('foreground');
-        text-transform: uppercase;
-        margin-bottom: 20px;
-        display: inline-block;
+        @include footer-title;
     }
 
     &__list {

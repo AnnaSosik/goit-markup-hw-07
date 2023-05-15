@@ -44,10 +44,29 @@
         cursor: pointer;
         width: 30px;
         height: 30px;
-        background-color: var(--brand-color-white);
+        background-color: getColor('foreground');
         border: 1px solid rgba(0, 0, 0, 0.1);
         justify-content: center;
         align-items: center;
+    }
+
+    &__submit {
+        @include font(700, 16px, 1.9, 0.06em);
+        position: relative;
+        display: block;
+        width: 200px;
+        height: 50px;
+        margin-top: 30px;
+
+
+        background-color: getColor('accent');
+        color: getColor('foreground');
+        box-shadow: $shadow-button;
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+        align-items: center;
+        margin: 0 auto;
     }
 
     &__close {
@@ -176,16 +195,21 @@
         }
     }
 
-    &__text{
+    &__text {
         @include font(400, 14px, 1.67, 0.01);
         color: var(--brand-color-grey);
         line-height: 1.71;
         letter-spacing: 0, 03em;
     }
 
-    &__declaration{
+    &__declaration {
         display: flex;
         gap: 3px;
     }
-}
 
+    &__decoration {
+        color: getColor('accent');
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

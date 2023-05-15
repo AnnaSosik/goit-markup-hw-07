@@ -11,7 +11,7 @@
 }
 
 .logo-footer {
-  font-family: $mainFont;
+  font-family: $secondaryFont;
   @include logo;
   color: getColor('foreground');
   display: inline-block;
