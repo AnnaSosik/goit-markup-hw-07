@@ -75,7 +75,8 @@
     }
 
     &__title {
-        @include font(700, 18px, 1.55, 0.06em);
+        @include font(700, 18px, 2, 0.06em);
+
     }
 
 

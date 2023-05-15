@@ -475,7 +475,7 @@ main {
   font-family: getFont("rob");
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.55;
+  line-height: 2;
   letter-spacing: 0.06em;
 }
 .portfolio__description {
@@ -488,7 +488,7 @@ main {
 }
 .hero {
   background-color: #2f303a;
-  background-image: -webkit-gradient(
+  background-image: webkit-gradient(
       linear,
       left top,
       right top,
