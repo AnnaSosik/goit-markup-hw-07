@@ -16,7 +16,7 @@
         display: flex;
 
         transition: background-color 250ms getAnimation('animation');
-        
+
 
         &:is(:hover, :focus) {
             background-color: getColor('accent');
@@ -27,7 +27,7 @@
         }
     }
 
-        &__svg {
-            fill:getBackgroundColor('grey');
-        }
+    &__svg {
+        fill: getBackgroundColor('grey');
     }
+}

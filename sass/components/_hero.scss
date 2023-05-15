@@ -22,7 +22,7 @@
 
     &__btn {
         display: block;
-        color:getColor('foreground');
+        color: getColor('foreground');
         background-color: getColor('accent');
         box-shadow: $shadow-button;
         font-weight: 700;

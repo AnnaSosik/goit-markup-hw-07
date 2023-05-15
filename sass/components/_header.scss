@@ -84,7 +84,7 @@
     fill: getColor('secondary');
     margin-right: 15px;
     transition: color 250ms getAnimation('animation'), background-color 250ms getAnimation('animation');
-    
+
 
     &:is(:hover, :focus) {
       color: getColor('accent');

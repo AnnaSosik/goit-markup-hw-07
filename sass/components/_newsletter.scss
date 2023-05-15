@@ -5,65 +5,65 @@
         @include footer-title;
     }
 
-&__form {
-    display: flex;
-}
-
-&__input {
-    width: 358px;
-    height: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    background-color: getBackgroundColor('dark');
-    color: getColor('foreground');
-    padding: 20px;
-    font-size: 16px;
-    letter-spacing: 0.03em;
-
-    transition: background-color 250ms getAnimation('animation');
-
-    &::placeholder {
-        @include font(400, 16px, 1.25, 0.03em);
-        margin-left: 16px;
-        padding-left: 16px;
+    &__form {
+        display: flex;
     }
-}
 
-&__btn {
-    width: 200px;
-    height: 50px;
-    margin-left: 12px;
-    background-color: getColor('accent');
-    box-shadow: $shadow-button;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    border: none;
-    cursor: pointer;
-}
+    &__input {
+        width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: getBackgroundColor('dark');
+        color: getColor('foreground');
+        padding: 20px;
+        font-size: 16px;
+        letter-spacing: 0.03em;
 
-&__icon {
-    display: block;
-    fill: getColor('foreground');
-    position: absolute;
-    top: 13px;
-    right: 28px;
-    bottom: 13px;
-    width: 24px;
-    height: 24px;
-}
+        transition: background-color 250ms getAnimation('animation');
+
+        &::placeholder {
+            @include font(400, 16px, 1.25, 0.03em);
+            margin-left: 16px;
+            padding-left: 16px;
+        }
+    }
+
+    &__btn {
+        width: 200px;
+        height: 50px;
+        margin-left: 12px;
+        background-color: getColor('accent');
+        box-shadow: $shadow-button;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        border: none;
+        cursor: pointer;
+    }
+
+    &__icon {
+        display: block;
+        fill: getColor('foreground');
+        position: absolute;
+        top: 13px;
+        right: 28px;
+        bottom: 13px;
+        width: 24px;
+        height: 24px;
+    }
 
 
-.sign-in {
-    @include font(700, 16px, 1.87, 00.03em);
-    position: absolute;
-    color: getColor('foreground');
-    position: absolute;
-    top: 10px;
-    left: 42px;
-    letter-spacing: 0.06em;
-    cursor: pointer;
-}
+    .sign-in {
+        @include font(700, 16px, 1.87, 00.03em);
+        position: absolute;
+        color: getColor('foreground');
+        position: absolute;
+        top: 10px;
+        left: 42px;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+    }
 }
