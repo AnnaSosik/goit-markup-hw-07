@@ -67,34 +67,3 @@ nav {
   margin: 0 auto;
   padding: 0 15px;
 }
-
-.header {
-  color: var(--brand-background-white);
-  padding: 24px 0 25px;
-  border-bottom: 1px solid #ececec;
-  display: flex;
-  align-items: center;
-  margin: auto;
-}
-
-
-.header {
-  display: flex;
-  align-items: center;
-}
-
-main {
-  text-align: center;
-}
-
-.footer {
-  background-color: getBackgroundColor("dark");
-  text-align: start;
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  &__box {
-    display: flex;
-    align-items: baseline;
-  }
-}

@@ -6,12 +6,6 @@
   align-items: center;
   margin: auto;
   border-bottom: 1px solid #ececec;
-
-}
-
-.head {
-  display: flex;
-  align-items: center;
 }
 
 .header .container {
@@ -23,8 +17,11 @@
   gap: 46px;
   justify-content: space-between;
   display: flex;
+  margin-left: 93px;
+
 
   &__link {
+
     @include font(500, 14px, 1.14);
     font-family: $mainFont;
     color: getColor('primary');
@@ -37,8 +34,7 @@
 
     &--active {
       color: getColor('accent');
-      @include font(500, 14px, 1.14);
-      position: relative;
+
     }
 
     &--active::after {

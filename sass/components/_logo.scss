@@ -1,24 +1,17 @@
 .logo {
-  font-family: $secondaryFont;
-  @include logo;
-  color: getColor('primary');
-  margin-right: 93px;
 
-  &--blue {
-    color: getColor('accent');
+  @include logo;
+  font-family: $secondaryFont;
+  color: getColor('accent');
+
+
+  &--black {
+    color: getColor('primary');
   }
 
-}
-
-.logo-footer {
-  font-family: $secondaryFont;
-  @include logo;
-  color: getColor('foreground');
-  display: inline-block;
-  margin-bottom: 20px;
-  text-decoration: none;
-
-  &--blue {
-    color: getColor('accent');
+  &--white {
+    color: getColor('foreground');
   }
+
+
 }

@@ -27,8 +27,7 @@
 }
 
 @mixin logo {
-    @include font(700, 26px, 1.2, 00.03em);
-    font-family: getFont('ral');
+    @include font(700, 26px, 31px, 0.03em);
 }
 
 @mixin footer-title {
